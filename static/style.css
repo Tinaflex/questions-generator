@@ -1,0 +1,122 @@
+/* Styling the overall page */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0f2fe; /* Soft, playful sky blue */
+    color: #1e1b4b; /* Deep purple/navy for clear, gentle reading */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* The main white card holding the app */
+.app-container {
+    background: white;
+    padding: 30px;
+    border-radius: 24px; /* Nice rounded corners for a soft look */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: #4338ca; /* Vibrant indigo */
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #64748b;
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+}
+
+/* Form layouts */
+form {
+    text-align: left;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #cbd5e1;
+    border-radius: 12px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+/* Highlight the input field when clicked */
+input:focus {
+    outline: none;
+    border-color: #3b82f6;
+}
+
+/* The big action button */
+.generate-btn {
+    width: 100%;
+    background-color: #f97316; /* Energetic orange */
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(249, 115, 22, 0.2);
+    transition: transform 0.1s, background-color 0.2s;
+}
+
+/* Button animation when hovered or clicked */
+.generate-btn:hover {
+    background-color: #ea580c;
+}
+
+.generate-btn:active {
+    transform: scale(0.98); /* Slight press-down effect */
+}
+
+/* The results box area */
+.results-box {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8fafc;
+    border: 2px dashed #cbd5e1;
+    border-radius: 16px;
+    min-height: 100px;
+}
+
+.placeholder-text {
+    color: #94a3b8;
+    font-style: italic;
+}
+
+footer {
+    margin-top: 25px; /* Pushes the footer down away from the white card */
+    font-size: 0.85rem;
+    color: #64748b; /* Soft gray color so it doesn't distract kids */
+    text-align: center;
+    letter-spacing: 0.5px;
+}
