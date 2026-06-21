@@ -2,42 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Question Generator 🚀</title>
     <link rel="stylesheet" href="/static/style.css" />
   </head>
   <body>
     <div class="app-container">
-      <h1>🧠 Brain Power Question Generator! ✨</h1>
+      <h1>Brain Power Question Generator!</h1>
       <p class="subtitle">
-        Pick your favorite subject and let's test your super-brain!
+        Pick your favourite subject and let's test your super-brain!
       </p>
 
       <form action="/generate" method="POST">
         <div class="input-group">
-          <label for="subject">📚 Choose a Subject:</label>
+          <label for="subject">Choose a Subject:</label>
           <input
             type="text"
             id="subject"
             name="subject"
-            placeholder="e.g. Science"
+            placeholder="e.g. Mathematics"
             required
           />
         </div>
 
         <div class="input-group">
-          <label for="topic">🎯 What's the Topic?</label>
+          <label for="topic">What's the Topic?</label>
           <input
             type="text"
             id="topic"
             name="topic"
-            placeholder="e.g. Space"
+            placeholder="e.g. Fractions"
             required
           />
         </div>
 
         <div class="input-group">
-          <label for="count">🔢 How many questions?</label>
+          <label for="count">How many questions?</label>
           <input
             type="number"
             id="count"
@@ -49,20 +50,15 @@
           />
         </div>
 
-        <button type="submit" class="generate-btn">
-          Generate Questions! 🎉
-        </button>
+        <button type="submit" class="generate-btn">Generate Questions!</button>
       </form>
 
-      <div id="result-container" class="results-box">
-        <p class="placeholder-text">
-          Your awesome questions will appear here...
-        </p>
-      </div>
+      <!-- Your awesome questions will appear here...-->
+       
     </div>
 
     <footer>
-      <p>Made with 💖 by Faustina Adekpui</p>
+      <p>Built by Faustina Adekpui</p>
     </footer>
   </body>
 </html>

@@ -98,21 +98,6 @@ input:focus {
     transform: scale(0.98); /* Slight press-down effect */
 }
 
-/* The results box area */
-.results-box {
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #f8fafc;
-    border: 2px dashed #cbd5e1;
-    border-radius: 16px;
-    min-height: 100px;
-}
-
-.placeholder-text {
-    color: #94a3b8;
-    font-style: italic;
-}
-
 footer {
     margin-top: 25px; /* Pushes the footer down away from the white card */
     font-size: 0.85rem;
