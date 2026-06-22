@@ -25,7 +25,7 @@ def home():
 
 @app.post("/generate")
 def generate(subject: str = Form(), topic: str = Form(), count: int = Form()):
-    instructions = (
+    intructions = (
         f"Generate exactly {count} questions about the topic "
         f'"{topic}" in the subject "{subject}". '
         f"Return ONLY a JSON array of strings, no other text. "
@@ -33,7 +33,7 @@ def generate(subject: str = Form(), topic: str = Form(), count: int = Form()):
     )
 
     response = requests.post(
-        STARTOCODE_QUESTION_GENERATOR, json={"question": instructions}, timeout=30)
+        STARTOCODE_QUESTION_GENERATOR, json={"question": intructions}, timeout=30)
     data = response.json()
 
     # parse the questions from the API response
